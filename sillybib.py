@@ -12,7 +12,7 @@ def split_at_last_occurence(string, char):
 	while ilast >= 0 and string[ilast] != char:
 		ilast -= 1
 
-	return string[:ilast], string[ilast:]
+	return string[:ilast], string[ilast+1:]
 
 prefix, suffix = split_at_last_occurence(input_filename, ".")
 output_filename = f"{prefix}-filtered.{suffix}"
